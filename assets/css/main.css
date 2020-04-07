@@ -156,13 +156,13 @@ h1, h2, h3, label {
   padding: 3rem 5rem;
 }
 .seccion-izquierda__about-titulo {
-  font-size: 3.125pxem;
+  font-size: 3.125em;
   margin: 0;
   text-transform: uppercase;
   line-height: 1.2em;
 }
 .seccion-izquierda__about-contenido {
-  font-size: 1.125pxem;
+  font-size: 1.125em;
   line-height: 1.7em;
   color: #646266;
 }

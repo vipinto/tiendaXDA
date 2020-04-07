@@ -6,14 +6,14 @@
   }
 
   &__about-titulo {
-    @include relative-converter(font-size, em, $xxx-large, 16);
+    @include relative-converter(font-size, em, $xxx-large, 16px);
     margin: 0;
     text-transform: uppercase;
     line-height: 1.2em;
   }
 
   &__about-contenido {
-    @include relative-converter(font-size, em, $large, 16);
+    @include relative-converter(font-size, em, $large, 16px);
     line-height: 1.7em;
     color: $granite-gray;
   }
