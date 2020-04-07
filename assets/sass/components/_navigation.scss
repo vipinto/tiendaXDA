@@ -2,7 +2,7 @@
   grid-area: nav;
 }
 
-.navigation {
+.navegacion {
   position: relative;
 
   &__logo {
@@ -11,7 +11,7 @@
     left: 0;
   }
 
-  &__collapsible {
+  &__plegable {
     text-align: right;
 
     label {
@@ -27,7 +27,7 @@
     display: none;
   }
 
-  input:checked ~ .navigation__container {
+  input:checked ~ .navegacion__container {
     max-height: 100%;
   }
 
@@ -46,11 +46,11 @@
     border-bottom: solid 1px $granite-gray;
   }
 
-  &__list {
+  &__lista {
     display: block;
     text-align: center;
 
-    .navigation__item:last-child {
+    .navegacion__item:last-child {
       border-bottom: none;
     }
   }
@@ -68,7 +68,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .navigation {
+  .navegacion {
     &__logo {
       transform: rotate(270deg);
       position: absolute;
@@ -76,7 +76,7 @@
       left: 0;
     }
 
-    &__collapsible {
+    &__plegable {
       label {
         display: none;
       }
@@ -88,7 +88,7 @@
       overflow: visible;
     }
 
-    &__list {
+    &__lista {
       display: flex;
       justify-content: flex-end;
       pad: inherit;

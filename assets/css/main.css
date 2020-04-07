@@ -81,7 +81,7 @@ h1, h2, h3, label {
  *
  * Esta carpeta contiene todo lo que hace relación con el sitio web o la aplicación.
  * Aquí encontrarás los estilos para las partes principales del sitio (header, footer, 
- * navigation, sidebar, etc), el sistema de grillas o incluso los estilos de los formularios
+ * navegacion, sidebar, etc), el sistema de grillas o incluso los estilos de los formularios
  *
  *
  * Nota:
@@ -107,24 +107,24 @@ h1, h2, h3, label {
     grid-template-areas: "nav nav" "ls rs";
   }
 }
-.left-section {
+.seccion-izquierda {
   grid-area: ls;
 }
-.left-section__about {
+.seccion-izquierda__about {
   padding: 3rem 5rem;
 }
-.left-section__about-title {
-  font-size: 3.125em;
+.seccion-izquierda__about-titulo {
+  font-size: 3.125pxem;
   margin: 0;
   text-transform: uppercase;
   line-height: 1.2em;
 }
-.left-section__about-content {
-  font-size: 1.125em;
+.seccion-izquierda__about-contenido {
+  font-size: 1.125pxem;
   line-height: 1.7em;
   color: #646266;
 }
-.left-section__newsletter {
+.seccion-izquierda__newsletter {
   background-color: #0c0910;
   color: #fff;
   padding: 1rem 5rem;
@@ -132,7 +132,7 @@ h1, h2, h3, label {
   position: relative;
   min-height: 172px;
 }
-.left-section__subscribe {
+.seccion-izquierda__subscribe {
   position: absolute;
   top: 58px;
   right: -58px;
@@ -143,12 +143,12 @@ h1, h2, h3, label {
   text-align: center;
 }
 
-.right-section {
+.seccion-derecha {
   grid-area: rs;
   height: 100%;
   width: 100%;
 }
-.right-section__img {
+.seccion-derecha__img {
   height: 100%;
   background-color: black;
   background-image: url("../../assets/img/man.jpg");
@@ -156,11 +156,11 @@ h1, h2, h3, label {
   background-position: top center;
 }
 
-.form-primary__label {
+.formulario__label {
   display: block;
   padding-bottom: 0.5em;
 }
-.form-primary__input {
+.formulario__input {
   width: 70%;
   padding: 0.5em;
 }
@@ -186,94 +186,94 @@ h1, h2, h3, label {
   grid-area: nav;
 }
 
-.navigation {
+.navegacion {
   position: relative;
 }
-.navigation__logo {
+.navegacion__logo {
   position: absolute;
   top: 0;
   left: 0;
 }
-.navigation__collapsible {
+.navegacion__plegable {
   text-align: right;
 }
-.navigation__collapsible label {
+.navegacion__plegable label {
   font-size: 1.8rem;
 }
-.navigation__collapsible label i {
+.navegacion__plegable label i {
   padding: 2.2rem;
 }
-.navigation #menu {
+.navegacion #menu {
   display: none;
 }
-.navigation input:checked ~ .navigation__container {
+.navegacion input:checked ~ .navegacion__container {
   max-height: 100%;
 }
-.navigation__container {
+.navegacion__container {
   max-height: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
 }
-.navigation__item {
+.navegacion__item {
   display: block;
   text-align: center;
   margin: 0 1em;
   padding: 1em 0.5em;
   border-bottom: solid 1px #646266;
 }
-.navigation__list {
+.navegacion__lista {
   display: block;
   text-align: center;
 }
-.navigation__list .navigation__item:last-child {
+.navegacion__lista .navegacion__item:last-child {
   border-bottom: none;
 }
-.navigation__link {
+.navegacion__link {
   color: #0c0910;
-  font-size: 0.875em;
+  font-size: 0.875pxem;
   font-weight: 700;
   padding: 0.5em 1em;
 }
-.navigation__link:hover {
+.navegacion__link:hover {
   color: #a6a5a8;
 }
 
 @media only screen and (min-width: 769px) {
-  .navigation__logo {
+  .navegacion__logo {
     transform: rotate(270deg);
     position: absolute;
     top: 0;
     left: 0;
   }
-  .navigation__collapsible label {
+  .navegacion__plegable label {
     display: none;
   }
-  .navigation__container {
+  .navegacion__container {
     max-height: 100%;
     padding: 2em;
     overflow: visible;
   }
-  .navigation__list {
+  .navegacion__lista {
     display: flex;
     justify-content: flex-end;
     pad: inherit;
     margin: inherit;
   }
-  .navigation__item {
+  .navegacion__item {
     display: inline-block;
     text-align: center;
     margin: 0 1em;
     padding: 1em 0.5em;
     border-bottom: none;
   }
-  .navigation__link {
+  .navegacion__link {
     padding: 2em;
     color: #0c0910;
-    font-size: 0.875em;
+    font-size: 0.875pxem;
     font-weight: 700;
   }
-  .navigation__link:hover {
+  .navegacion__link:hover {
     color: #a6a5a8;
   }
 }

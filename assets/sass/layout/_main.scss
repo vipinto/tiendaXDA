@@ -1,18 +1,18 @@
-.left-section {
+.seccion-izquierda {
   grid-area: ls;
 
   &__about {
     padding: 3rem 5rem;
   }
 
-  &__about-title {
+  &__about-titulo {
     @include relative-converter(font-size, em, $xxx-large, 16);
     margin: 0;
     text-transform: uppercase;
     line-height: 1.2em;
   }
 
-  &__about-content {
+  &__about-contenido {
     @include relative-converter(font-size, em, $large, 16);
     line-height: 1.7em;
     color: $granite-gray;
@@ -39,7 +39,7 @@
   }
 }
 
-.right-section {
+.seccion-derecha {
   grid-area: rs;
   height: 100%;
   width: 100%;
