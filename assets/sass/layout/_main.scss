@@ -1,0 +1,54 @@
+.left-section {
+  grid-area: ls;
+
+  &__about {
+    padding: 3rem 5rem;
+  }
+
+  &__about-title {
+    @include relative-converter(font-size, em, $xxx-large, 16);
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2em;
+  }
+
+  &__about-content {
+    @include relative-converter(font-size, em, $large, 16);
+    line-height: 1.7em;
+    color: $granite-gray;
+  }
+
+  &__newsletter {
+    background-color: $smoky-black;
+    color: $white;
+    padding: 1rem 5rem;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 172px;
+  }
+
+  &__subscribe {
+    position: absolute;
+    top: 58px;
+    right: -58px;
+    transform: rotate(90deg);
+    background-color: white;
+    color: black;
+    width: 172px;
+    text-align: center;
+  }
+}
+
+.right-section {
+  grid-area: rs;
+  height: 100%;
+  width: 100%;
+
+  &__img {
+    height: 100%;
+    background-color: black;
+    background-image: url("../../assets/img/man.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+}
